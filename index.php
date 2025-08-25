@@ -7,19 +7,20 @@
 </head>
 <body>
   <div class="container">
-    <h1>Calculadora de Acheron</h1>
+    <h1>Calculadora</h1>
+
     <form method="post" class="calculadora">
       <input type="number" name="num1" placeholder="Número 1" required>
-      
+
       <select name="operador">
-        <option value="suma">+</option>
-        <option value="resta">-</option>
-        <option value="multiplicacion">*</option>
-        <option value="division">/</option>
+        <option value="suma">suma</option>
+        <option value="resta">resta</option>
+        <option value="multiplicacion">multiplicacion</option>
+        <option value="division">division</option>
       </select>
-      
+
       <input type="number" name="num2" placeholder="Número 2" required>
-      
+
       <button type="submit">Calcular</button>
     </form>
 
@@ -43,6 +44,8 @@
         case "division":
           $resultado = ($num2 != 0) ? $num1 / $num2 : "Error: División por cero";
           break;
+        default:
+          $resultado = "Operación no válida";
       }
 
       echo "<p class='resultado'>Resultado: <strong>$resultado</strong></p>";
