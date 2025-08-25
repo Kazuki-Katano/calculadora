@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Calculadora</h1>
+    <h1>Calculadora de Acheron</h1>
 
     <form method="post" class="calculadora">
       <input type="number" name="num1" placeholder="Número 1" required>
